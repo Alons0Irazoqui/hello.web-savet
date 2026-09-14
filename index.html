@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Encuentra terrenos en venta al norte de Chihuahua y sobre carretera Aldama con SAVET Servicios Inmobiliarios. Opciones desde 200 m², planes de financiamiento y asesoría personalizada.">
-<meta name="keywords" content="terrenos en venta Chihuahua, lotes campestres Chihuahua, terrenos carretera Aldama, inversión inmobiliaria Chihuahua, SAVET Servicios Inmobiliarios">
+<meta name="description" content="Encuentra terrenos en venta en Chihuahua con SAVET Servicios Inmobiliarios. Opciones desde 200 m², apartados desde $500 y planes de financiamiento según cada proyecto.">
+<meta name="keywords" content="terrenos en venta Chihuahua, lotes campestres Chihuahua, terrenos carretera Aldama, terrenos carretera Cuauhtémoc, inversión inmobiliaria Chihuahua, SAVET Servicios Inmobiliarios">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#0b0d10">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_MX">
 <meta property="og:title" content="SAVET | Terrenos e inversión inmobiliaria en Chihuahua">
-<meta property="og:description" content="Terrenos con proyección, alternativas de financiamiento y acompañamiento para invertir con mayor claridad.">
+<meta property="og:description" content="Terrenos desde 200 m², opciones de contado y financiamiento, y atención directa por WhatsApp.">
 <meta property="og:image" content="imagenes/log.jpeg">
 <title>SAVET | Terrenos en venta e inversión inmobiliaria en Chihuahua</title>
 <link rel="icon" type="image/jpeg" href="imagenes/log.jpeg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
 <style>
 /* =============================================
    VARIABLES
@@ -457,6 +457,26 @@ ul { list-style: none; }
 }
 .about-stat strong { display: block; font-family: var(--font-serif); font-size: 38px; font-weight: 300; color: var(--gold); line-height: 1; margin-bottom: 5px; }
 .about-stat span   { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-soft); font-weight: 400; }
+.business-info {
+  margin-top: 34px;
+  padding: 24px;
+  background: rgba(201,154,61,0.08);
+  border: 1px solid rgba(201,154,61,0.18);
+}
+.business-info h3 {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+.business-info p {
+  font-size: 14px;
+  color: var(--text-mid);
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+.business-info p:last-child { margin-bottom: 0; }
 
 /* =============================================
    ROOMS  — DARK section con fotos reales
@@ -465,7 +485,7 @@ ul { list-style: none; }
 
 .rooms-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 3px; }
 .room-card { position: relative; overflow: hidden; cursor: pointer; }
-.room-card-inner { aspect-ratio: 3/4; position: relative; overflow: hidden; }
+.room-card-inner { display: block; aspect-ratio: 3/4; position: relative; overflow: hidden; }
 
 .room-card-img {
   position: absolute; inset: 0;
@@ -606,6 +626,106 @@ ul { list-style: none; }
 .gi-4 { grid-column: 1/5;  }
 .gi-5 { grid-column: 5/9;  }
 .gi-6 { grid-column: 9/13; }
+
+.project-catalog {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 68px;
+}
+.project-card {
+  display: grid;
+  grid-template-rows: minmax(0, 330px) 1fr;
+  background: var(--dark-2);
+  border: 1px solid var(--border-d);
+  overflow: hidden;
+  transition: transform 0.35s var(--ease-out), border-color 0.35s, box-shadow 0.35s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(201,154,61,0.42);
+  box-shadow: 0 18px 52px rgba(0,0,0,0.28);
+}
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  background: var(--black);
+  border-bottom: 1px solid var(--border-d);
+}
+.project-info { padding: 22px; }
+.project-zone {
+  font-size: 9px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.project-info h3 {
+  font-family: var(--font-serif);
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.08;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+.project-info p {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 18px;
+}
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 18px 0 0;
+  padding-top: 16px;
+  border-top: 1px solid rgba(201,154,61,0.14);
+}
+.project-details li {
+  position: relative;
+  padding-left: 14px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.68);
+  line-height: 1.55;
+}
+.project-details li::before {
+  content: '';
+  position: absolute;
+  top: 0.74em;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background: var(--gold);
+}
+.project-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+.project-facts div {
+  min-width: 0;
+  border: 1px solid rgba(201,154,61,0.14);
+  background: rgba(201,154,61,0.06);
+  padding: 10px;
+}
+.project-facts dt {
+  font-size: 8px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+.project-facts dd {
+  font-size: 12px;
+  color: rgba(255,255,255,0.78);
+  line-height: 1.35;
+  word-break: break-word;
+}
 
 /* =============================================
    LOCATION  — CREAM section
@@ -781,19 +901,19 @@ footer { background: var(--black); padding: 68px 5% 36px; border-top: 1px solid 
 .social-link svg { width: 13px; height: 13px; }
 
 /* =============================================
-   FACEBOOK FLOAT
+   WHATSAPP FLOAT
 ============================================= */
 #wa-float {
   position: fixed; bottom: 26px; right: 22px; z-index: 900;
-  width: 58px; height: 58px; background: #1877F2; border-radius: 50%;
+  width: 58px; height: 58px; background: #25D366; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 4px 22px rgba(24,119,242,0.4);
+  box-shadow: 0 4px 22px rgba(37,211,102,0.35);
   transition: transform 0.3s var(--ease-out), box-shadow 0.3s;
 }
-#wa-float:hover { transform: scale(1.1) translateY(-3px); box-shadow: 0 8px 32px rgba(24,119,242,0.55); }
+#wa-float:hover { transform: scale(1.1) translateY(-3px); box-shadow: 0 8px 32px rgba(37,211,102,0.5); }
 #wa-float svg { width: 28px; height: 28px; fill: white; position: relative; z-index: 1; }
-.wa-ring { position: absolute; inset: -5px; border-radius: 50%; background: rgba(24,119,242,0.22); animation: waRing 2.5s ease-in-out infinite; }
-.wa-ring-2 { position: absolute; inset: -12px; border-radius: 50%; background: rgba(24,119,242,0.1); animation: waRing 2.5s ease-in-out 0.65s infinite; }
+.wa-ring { position: absolute; inset: -5px; border-radius: 50%; background: rgba(37,211,102,0.22); animation: waRing 2.5s ease-in-out infinite; }
+.wa-ring-2 { position: absolute; inset: -12px; border-radius: 50%; background: rgba(37,211,102,0.1); animation: waRing 2.5s ease-in-out 0.65s infinite; }
 @keyframes waRing { 0%,100%{transform:scale(1);opacity:0.7;} 50%{transform:scale(1.18);opacity:0;} }
 
 /* =============================================
@@ -814,6 +934,7 @@ footer { background: var(--black); padding: 68px 5% 36px; border-top: 1px solid 
   .amenities-grid { grid-template-columns: repeat(2,1fr); }
   .reviews-grid { grid-template-columns: 1fr; gap: 3px; }
   .contact-grid { grid-template-columns: 1fr; gap: 52px; }
+  .project-catalog { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .gallery-grid {
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: 280px 220px;
@@ -836,9 +957,12 @@ footer { background: var(--black); padding: 68px 5% 36px; border-top: 1px solid 
   .gi-1,.gi-2,.gi-3,.gi-4,.gi-5,.gi-6 { grid-column: auto; grid-row: auto; }
   .gallery-grid .gallery-item img { aspect-ratio: 1; height: 220px; }
   .gi-label { opacity: 1; transform: translateY(0); }
+  .project-card { grid-template-rows: minmax(0, 300px) 1fr; }
 }
 @media (max-width: 480px) {
   .amenities-grid { grid-template-columns: 1fr; }
+  .project-catalog { grid-template-columns: 1fr; }
+  .project-facts { grid-template-columns: 1fr; }
   .hero-actions { flex-direction: column; align-items: stretch; }
   .btn-primary, .btn-ghost { text-align: center; padding: 15px; }
   .about-stats { gap: 18px; }
@@ -854,6 +978,13 @@ footer { background: var(--black); padding: 68px 5% 36px; border-top: 1px solid 
   "areaServed": {
     "@type": "City",
     "name": "Chihuahua"
+  },
+  "telephone": "+526145497808",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+526145497808",
+    "contactType": "sales",
+    "areaServed": "MX"
   },
   "sameAs": [
     "https://www.facebook.com/share/1EY6xToPox/"
@@ -950,7 +1081,7 @@ footer { background: var(--black); padding: 68px 5% 36px; border-top: 1px solid 
           class="about-img"
           loading="lazy">
         <div class="about-badge">
-          <strong>6</strong>
+          <strong>13</strong>
           <span>Proyectos disponibles</span>
         </div>
       </div>
@@ -958,14 +1089,20 @@ footer { background: var(--black); padding: 68px 5% 36px; border-top: 1px solid 
         <p class="section-tag no-lines reveal">Acerca de SAVET</p>
         <h2 class="about-title reveal d1">Elegir un terreno es<br>elegir <em>hacia dónde crecer</em></h2>
         <p class="about-text reveal d2">En SAVET Servicios Inmobiliarios te ayudamos a comparar proyectos, ubicaciones, superficies y esquemas de pago para que tomes una decisión alineada con tus planes.</p>
-        <p class="about-text reveal d2">Nuestro portafolio reúne terrenos campestres y residenciales al norte de Chihuahua y sobre carretera Aldama, con opciones para construir, disfrutar o fortalecer tu patrimonio.</p>
+        <p class="about-text reveal d2">Nuestro portafolio reúne terrenos campestres, rústicos y habitacionales en zonas como carretera Cuauhtémoc, carretera Aldama, carretera Juárez, carretera Parral, Santa Isabel, Sacramento y el sur de la ciudad.</p>
+        <div class="business-info reveal d2">
+          <h3>SAVET Servicios Inmobiliarios</h3>
+          <p>Tu lugar ideal para vivir, invertir y construir tu futuro.</p>
+          <p>Invierte hoy en el lugar donde podrás construir tranquilidad, descanso y patrimonio para tu familia.</p>
+          <p>www.savet.com.mx</p>
+        </div>
         <div class="about-stats reveal d3">
           <div class="about-stat">
-            <strong>200–400</strong>
+            <strong>200–1,000</strong>
             <span>m² por terreno</span>
           </div>
           <div class="about-stat">
-            <strong>6</strong>
+            <strong>13</strong>
             <span>Alternativas para elegir</span>
           </div>
           <div class="about-stat">
@@ -984,80 +1121,79 @@ footer { background: var(--black); padding: 68px 5% 36px; border-top: 1px solid 
     <div class="section-header">
       <p class="section-tag reveal">Proyectos destacados</p>
       <h2 class="section-title reveal d1" id="rooms-title" style="color:var(--white);">Encuentra el terreno que<br><em>sí encaja contigo</em></h2>
-      <p class="section-lead reveal d2" style="color:var(--text-muted);">Tres opciones para comenzar. Consulta nuestro portafolio completo y compara ubicación, superficie y plan de pago.</p>
+      <p class="section-lead reveal d2" style="color:var(--text-muted);">Tres opciones para comenzar. Consulta el portafolio completo y compara ubicación, superficie y plan de pago.</p>
     </div>
     <div class="rooms-grid">
 
-      <!-- Campestre Lomas de Sacramento -->
+      <!-- Rancho La Haciendita -->
       <article class="room-card reveal">
-        <div class="room-card-inner">
+        <a class="room-card-inner" href="WhatsApp%20Image%202026-08-27%20at%203.01.30%20PM%20(1).jpeg" target="_blank" rel="noopener" aria-label="Abrir folleto de Rancho La Haciendita">
           <img
-            src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"
-            alt="Terreno campestre abierto con vegetación y montañas"
+            src="WhatsApp%20Image%202026-08-27%20at%203.01.30%20PM%20(1).jpeg"
+            alt="Folleto de Rancho La Haciendita"
             class="room-card-img"
             loading="lazy">
           <div class="room-overlay"></div>
           <div class="room-pills">
-            <span class="room-pill">200 m²</span>
-            <span class="room-pill">Desde $60,000</span>
-            <span class="room-pill">Hasta 48 meses</span>
+            <span class="room-pill">300 m²</span>
+            <span class="room-pill">$495,000</span>
+            <span class="room-pill">5 años</span>
           </div>
           <div class="room-content">
-            <p class="room-tag">Zona norte de Chihuahua</p>
-            <h3 class="room-name">Campestre<br>Lomas de Sacramento</h3>
-            <p class="room-desc">Lotes de 200 m² para casa de campo, granja o inversión. Financiamiento con enganche desde $6,000.</p>
+            <p class="room-tag">Final de La Cantera</p>
+            <h3 class="room-name">Rancho<br>La Haciendita</h3>
+            <p class="room-desc">A 10 minutos de Costco, con lotes de 300 m², servicios en la zona y plan de financiamiento a 5 años.</p>
           </div>
-        </div>
+        </a>
       </article>
 
-      <!-- El Papalote -->
+      <!-- Mirador Las Varas -->
       <article class="room-card reveal d1">
-        <div class="room-card-inner">
+        <a class="room-card-inner" href="WhatsApp%20Image%202026-08-27%20at%203.01.32%20PM.jpeg" target="_blank" rel="noopener" aria-label="Abrir folleto de Mirador Las Varas">
           <img
-            src="https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"
-            alt="Casa de campo rodeada de terreno natural"
+            src="WhatsApp%20Image%202026-08-27%20at%203.01.32%20PM.jpeg"
+            alt="Folleto de Mirador Las Varas"
             class="room-card-img"
             loading="lazy">
           <div class="room-overlay"></div>
           <div class="room-pills">
-            <span class="room-pill">200 m²</span>
-            <span class="room-pill">Km 27</span>
-            <span class="room-pill">Aparta con $1,000</span>
+            <span class="room-pill">500 m²</span>
+            <span class="room-pill">$225,000 contado</span>
+            <span class="room-pill">Aparta $500</span>
           </div>
           <div class="room-content">
-            <p class="room-tag">Carretera a Juárez</p>
-            <h3 class="room-name">Proyecto<br>El Papalote</h3>
-            <p class="room-desc">A un costado del CEDIS de Walmart. Precio de contado de $160,000 y alternativa financiada hasta 48 meses.</p>
+            <p class="room-tag">Carretera Chihuahua-Parral km 17</p>
+            <h3 class="room-name">Mirador<br>Las Varas</h3>
+            <p class="room-desc">Terrenos de 500 m², posesión inmediata, 100% escriturables, agua y luz a pie de lote.</p>
           </div>
-        </div>
+        </a>
       </article>
 
-      <!-- Paraíso Combate -->
+      <!-- La Española -->
       <article class="room-card reveal d2">
-        <div class="room-card-inner">
+        <a class="room-card-inner" href="WhatsApp%20Image%202026-08-27%20at%203.01.31%20PM%20(8).jpeg" target="_blank" rel="noopener" aria-label="Abrir folleto de Fraccionamiento La Española">
           <img
-            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"
-            alt="Paisaje natural con montañas para un proyecto campestre"
+            src="WhatsApp%20Image%202026-08-27%20at%203.01.31%20PM%20(8).jpeg"
+            alt="Folleto de Fraccionamiento La Española"
             class="room-card-img"
             loading="lazy">
           <div class="room-overlay"></div>
           <div class="room-pills">
-            <span class="room-pill">217 m²</span>
-            <span class="room-pill">Agua y luz</span>
-            <span class="room-pill">Aparta con $500</span>
-            <span class="room-pill">Escriturable</span>
+            <span class="room-pill">Desde 1,000 m²</span>
+            <span class="room-pill">$500/m²</span>
+            <span class="room-pill">Escritura</span>
           </div>
           <div class="room-content">
-            <p class="room-tag">Km 13 · Carretera Aldama</p>
-            <h3 class="room-name">Paraíso<br>Combate</h3>
-            <p class="room-desc">Lotes con servicios a pie de proyecto, permisos autorizados y financiamiento directo sin revisión de buró.</p>
+            <p class="room-tag">Santa Isabel</p>
+            <h3 class="room-name">Fraccionamiento<br>La Española</h3>
+            <p class="room-desc">Lotes desde 1,000 m², agua y luz a pie de lote, áreas verdes comunes y parque con juegos para niños.</p>
           </div>
-        </div>
+        </a>
       </article>
 
     </div>
     <div style="text-align:center;margin-top:48px;">
-      <a href="#gallery" class="btn-ghost reveal">Ver los 6 proyectos</a>
+      <a href="#gallery" class="btn-ghost reveal">Ver los 13 proyectos</a>
     </div>
   </div>
 </section>
@@ -1104,7 +1240,7 @@ footer { background: var(--black); padding: 68px 5% 36px; border-top: 1px solid 
       <div class="amenity-card reveal d2">
         <div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
         <h3 class="amenity-name">Seguimiento sencillo</h3>
-        <p class="amenity-desc">Centraliza dudas, disponibilidad y próximos pasos con atención directa desde nuestra página de Facebook.</p>
+        <p class="amenity-desc">Centraliza dudas, disponibilidad y próximos pasos con atención directa por WhatsApp.</p>
       </div>
       <div class="amenity-card reveal d3">
         <div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
@@ -1124,9 +1260,9 @@ footer { background: var(--black); padding: 68px 5% 36px; border-top: 1px solid 
         <h2 class="exp-tagline"><em>Tu terreno.</em> Tu proyecto.<br>Tu siguiente gran decisión.</h2>
       </div>
       <div class="exp-stats reveal d1">
-        <div class="exp-stat"><strong>6</strong><span>Proyectos</span></div>
+        <div class="exp-stat"><strong>13</strong><span>Proyectos</span></div>
         <div class="exp-stat"><strong>200 m²</strong><span>Superficie desde</span></div>
-        <div class="exp-stat"><strong>68</strong><span>Meses hasta</span></div>
+        <div class="exp-stat"><strong>84</strong><span>Meses hasta</span></div>
       </div>
     </div>
   </div>
@@ -1137,47 +1273,300 @@ footer { background: var(--black); padding: 68px 5% 36px; border-top: 1px solid 
   <div class="container" style="padding:120px 0;">
     <div class="section-header">
       <p class="section-tag reveal">Portafolio actual</p>
-      <h2 class="section-title reveal d1" id="gallery-title">Seis formas de empezar<br>a construir <em>patrimonio</em></h2>
-      <p class="section-lead reveal d2" style="color:var(--text-muted);">Abre cada ficha para consultar precios, superficies, ubicación y condiciones publicadas de cada proyecto.</p>
+      <h2 class="section-title reveal d1" id="gallery-title">Trece formas de empezar<br>a construir <em>patrimonio</em></h2>
+      <p class="section-lead reveal d2" style="color:var(--text-muted);">Abre cada folleto para consultar precios, superficies, ubicación y condiciones publicadas de cada proyecto.</p>
     </div>
-    <div class="gallery-grid reveal d1">
-
-      <a class="gallery-item gi-1" href="imagenes/WhatsApp%20Image%202026-07-22%20at%2012.03.14%20PM.jpeg" target="_blank" rel="noopener">
-        <img src="imagenes/WhatsApp%20Image%202026-07-22%20at%2012.03.14%20PM.jpeg"
-             alt="Ficha técnica de Granjas Lomas de Sacramento, terrenos de 400 metros cuadrados" loading="lazy">
-        <div class="gi-label">Granjas Lomas de Sacramento · Ver ficha</div>
+    <div class="project-catalog reveal d1">
+      <a class="project-card" href="WhatsApp%20Image%202026-08-27%20at%203.01.30%20PM.jpeg" target="_blank" rel="noopener" aria-label="Abrir folleto de Flor del Desierto">
+        <img src="WhatsApp%20Image%202026-08-27%20at%203.01.30%20PM.jpeg" alt="Folleto de Flor del Desierto" loading="lazy">
+        <div class="project-info">
+          <p class="project-zone">Junto al templo San Judas Tadeo</p>
+          <h3>Flor del Desierto</h3>
+          <p>Proyecto de terrenos rústicos a pie de carretera, con energía eléctrica cercana y agua por acarreo.</p>
+          <dl class="project-facts">
+            <div><dt>Superficie</dt><dd>200 m² mínimo</dd></div>
+            <div><dt>Contado</dt><dd>$77,000</dd></div>
+            <div><dt>Financiado</dt><dd>$105,000 a 84 meses</dd></div>
+            <div><dt>Enganche</dt><dd>$4,000</dd></div>
+          </dl>
+          <ul class="project-details">
+            <li>Terrenos 100% rústicos, sin servicios urbanos.</li>
+            <li>Mensualidades de $1,000 con $2,428 anuales.</li>
+            <li>Entrega inmediata.</li>
+            <li>No incluye agua ni luz dentro del terreno.</li>
+            <li>Zona en expansión comercial y habitacional.</li>
+          </ul>
+        </div>
       </a>
 
-      <a class="gallery-item gi-2" href="imagenes/WhatsApp%20Image%202026-07-22%20at%2012.03.15%20PM.jpeg" target="_blank" rel="noopener">
-        <img src="imagenes/WhatsApp%20Image%202026-07-22%20at%2012.03.15%20PM.jpeg"
-             alt="Ficha técnica de Campestre Lomas de Sacramento, terrenos de 200 metros cuadrados" loading="lazy">
-        <div class="gi-label">Campestre Lomas de Sacramento · Ver ficha</div>
+      <a class="project-card" href="WhatsApp%20Image%202026-08-27%20at%203.01.30%20PM%20(1).jpeg" target="_blank" rel="noopener" aria-label="Abrir folleto de Rancho La Haciendita">
+        <img src="WhatsApp%20Image%202026-08-27%20at%203.01.30%20PM%20(1).jpeg" alt="Folleto de Rancho La Haciendita" loading="lazy">
+        <div class="project-info">
+          <p class="project-zone">Final de La Cantera</p>
+          <h3>Rancho La Haciendita</h3>
+          <p>En La Haciendita, a 10 minutos de Costco, con agua y luz disponibles en la zona.</p>
+          <dl class="project-facts">
+            <div><dt>Superficie</dt><dd>300 m²</dd></div>
+            <div><dt>Contado</dt><dd>$495,000</dd></div>
+            <div><dt>Plan</dt><dd>5 años</dd></div>
+            <div><dt>Apartado</dt><dd>$1,000</dd></div>
+          </dl>
+          <ul class="project-details">
+            <li>Medida aproximada de 10 m x 30 m.</li>
+            <li>Enganche de $99,000 y mensualidades de $6,600.</li>
+            <li>Cerca de restaurantes y salones de eventos.</li>
+            <li>Próximamente hotel y villas.</li>
+            <li>Parque temático con 2 albercas, montaña rusa y tirolesa.</li>
+            <li>Escritura por Notaría Pública.</li>
+          </ul>
+        </div>
       </a>
 
-      <a class="gallery-item gi-3" href="imagenes/WhatsApp%20Image%202026-07-22%20at%2012.03.15%20PM%20(1).jpeg" target="_blank" rel="noopener">
-        <img src="imagenes/WhatsApp%20Image%202026-07-22%20at%2012.03.15%20PM%20(1).jpeg"
-             alt="Ficha técnica del proyecto El Papalote, terrenos de 200 metros cuadrados" loading="lazy">
-        <div class="gi-label">El Papalote · Ver ficha</div>
+      <a class="project-card" href="WhatsApp%20Image%202026-08-27%20at%203.01.31%20PM.jpeg" target="_blank" rel="noopener" aria-label="Abrir folleto de Campos del Sol">
+        <img src="WhatsApp%20Image%202026-08-27%20at%203.01.31%20PM.jpeg" alt="Folleto de Campos del Sol" loading="lazy">
+        <div class="project-info">
+          <p class="project-zone">Carretera Chihuahua-Cuauhtémoc</p>
+          <h3>Campos del Sol</h3>
+          <p>Lotes campestres rústicos sin servicios, con agua por acarreo y escrituración por prescripción adquisitiva.</p>
+          <dl class="project-facts">
+            <div><dt>Superficie</dt><dd>250 m²</dd></div>
+            <div><dt>Contado</dt><dd>$49,500</dd></div>
+            <div><dt>Enganche</dt><dd>Desde $8,000</dd></div>
+            <div><dt>Plazos</dt><dd>24 a 60 meses</dd></div>
+          </dl>
+          <ul class="project-details">
+            <li>Precio de lanzamiento de $198 por m².</li>
+            <li>Plan a 24 meses: total $59,400, mensualidad $2,141.67.</li>
+            <li>Plan a 36 meses: total $64,350, mensualidad $1,565.28.</li>
+            <li>Plan a 48 meses: total $69,300, mensualidad $1,277.08.</li>
+            <li>Plan a 60 meses: total $74,250, mensualidad $1,104.17.</li>
+          </ul>
+        </div>
       </a>
 
-      <a class="gallery-item gi-4" href="imagenes/WhatsApp%20Image%202026-07-22%20at%2012.03.15%20PM%20(2).jpeg" target="_blank" rel="noopener">
-        <img src="imagenes/WhatsApp%20Image%202026-07-22%20at%2012.03.15%20PM%20(2).jpeg"
-             alt="Ficha técnica de Rincones de Sacramento, lotes de 205 metros cuadrados" loading="lazy">
-        <div class="gi-label">Rincones de Sacramento · Ver ficha</div>
+      <a class="project-card" href="WhatsApp%20Image%202026-08-27%20at%203.01.31%20PM%20(1).jpeg" target="_blank" rel="noopener" aria-label="Abrir folleto de Vistas del Horizonte">
+        <img src="WhatsApp%20Image%202026-08-27%20at%203.01.31%20PM%20(1).jpeg" alt="Folleto de Vistas del Horizonte" loading="lazy">
+        <div class="project-info">
+          <p class="project-zone">Carretera Chihuahua-Cuauhtémoc km 30</p>
+          <h3>Vistas del Horizonte</h3>
+          <p>Lotes ideales para granja o casa de descanso, con luz en la zona y agua por acarreo.</p>
+          <dl class="project-facts">
+            <div><dt>Superficie</dt><dd>250 m²</dd></div>
+            <div><dt>Contado</dt><dd>$49,500</dd></div>
+            <div><dt>Apartado</dt><dd>$500</dd></div>
+            <div><dt>Enganche</dt><dd>Desde $8,000</dd></div>
+          </dl>
+          <ul class="project-details">
+            <li>Luz en la zona.</li>
+            <li>Escriturable por medio de prescripción adquisitiva.</li>
+            <li>Plan a 24 meses: total $59,400, mensualidad directa $2,141.67.</li>
+            <li>Plan a 36 meses: total $64,350, mensualidad directa $1,565.28.</li>
+            <li>Plan a 48 meses: total $69,300, mensualidad directa $1,277.08.</li>
+            <li>Plan a 60 meses: total $74,250, mensualidad directa $1,104.17.</li>
+          </ul>
+        </div>
       </a>
 
-      <a class="gallery-item gi-5" href="imagenes/WhatsApp%20Image%202026-07-22%20at%2012.03.15%20PM%20(3).jpeg" target="_blank" rel="noopener">
-        <img src="imagenes/WhatsApp%20Image%202026-07-22%20at%2012.03.15%20PM%20(3).jpeg"
-             alt="Ficha de venta de lote de 400 metros cuadrados en Calera sobre carretera Aldama" loading="lazy">
-        <div class="gi-label">Calera · Ver ficha</div>
+      <a class="project-card" href="WhatsApp%20Image%202026-08-27%20at%203.01.31%20PM%20(2).jpeg" target="_blank" rel="noopener" aria-label="Abrir folleto de Valle del Bisonte">
+        <img src="WhatsApp%20Image%202026-08-27%20at%203.01.31%20PM%20(2).jpeg" alt="Folleto de Valle del Bisonte" loading="lazy">
+        <div class="project-info">
+          <p class="project-zone">Sur de la ciudad</p>
+          <h3>Valle del Bisonte</h3>
+          <p>A solo 3 minutos de la Puerta de Chihuahua; ideal para casa de campo, rancho, descanso o inversión.</p>
+          <dl class="project-facts">
+            <div><dt>Superficie</dt><dd>Desde 220 m²</dd></div>
+            <div><dt>Contado</dt><dd>$110,000</dd></div>
+            <div><dt>Apartado</dt><dd>$500</dd></div>
+            <div><dt>Enganche</dt><dd>Desde $8,000</dd></div>
+          </dl>
+          <ul class="project-details">
+            <li>Ubicación privilegiada a solo 3 minutos de la Puerta de Chihuahua.</li>
+            <li>Agua por acarreo.</li>
+            <li>No cuenta con luz; se sugiere paneles solares por medios propios del cliente.</li>
+            <li>Escrituración por medio de prescripción adquisitiva.</li>
+            <li>Plan a 60 meses: precio total $165,000 y mensualidad directa $2,616.67.</li>
+          </ul>
+        </div>
       </a>
 
-      <a class="gallery-item gi-6" href="imagenes/WhatsApp%20Image%202026-07-22%20at%2012.03.15%20PM%20(4).jpeg" target="_blank" rel="noopener">
-        <img src="imagenes/WhatsApp%20Image%202026-07-22%20at%2012.03.15%20PM%20(4).jpeg"
-             alt="Ficha técnica de Paraíso Combate, lotes de 217 metros cuadrados sobre carretera Aldama" loading="lazy">
-        <div class="gi-label">Paraíso Combate · Ver ficha</div>
+      <a class="project-card" href="WhatsApp%20Image%202026-08-27%20at%203.01.31%20PM%20(3).jpeg" target="_blank" rel="noopener" aria-label="Abrir folleto de La Calera">
+        <img src="WhatsApp%20Image%202026-08-27%20at%203.01.31%20PM%20(3).jpeg" alt="Folleto de La Calera" loading="lazy">
+        <div class="project-info">
+          <p class="project-zone">Kilómetro 19, salida a Aldama</p>
+          <h3>La Calera</h3>
+          <p>Lotes de 400 m², con pozo propio dentro del proyecto y luz lista para subcontratación.</p>
+          <dl class="project-facts">
+            <div><dt>Superficie</dt><dd>400 m²</dd></div>
+            <div><dt>Contado</dt><dd>$250,000</dd></div>
+            <div><dt>Financiado</dt><dd>$290,000</dd></div>
+            <div><dt>Enganche</dt><dd>$10,000</dd></div>
+          </dl>
+          <ul class="project-details">
+            <li>A 3.8 km de la carretera, en el poblado de La Calera.</li>
+            <li>Medidas de 16 m x 25 m en su mayoría.</li>
+            <li>Mensualidad de $2,600 a 80 meses y anualidad de $12,000 en mayo o diciembre.</li>
+            <li>Pozo propio dentro del proyecto y luz lista para subcontratación.</li>
+            <li>Título de propiedad, en trámite para escriturar por RPP.</li>
+            <li>Posesión inmediata.</li>
+          </ul>
+        </div>
       </a>
 
+      <a class="project-card" href="WhatsApp%20Image%202026-08-27%20at%203.01.31%20PM%20(4).jpeg" target="_blank" rel="noopener" aria-label="Abrir folleto de Prado de Luna">
+        <img src="WhatsApp%20Image%202026-08-27%20at%203.01.31%20PM%20(4).jpeg" alt="Folleto de Prado de Luna" loading="lazy">
+        <div class="project-info">
+          <p class="project-zone">Fuentes Mares y carretera Delicias</p>
+          <h3>Prado de Luna</h3>
+          <p>Excelente lugar para granja, casa de campo o inversión, con luz en la zona y agua por acarreo.</p>
+          <dl class="project-facts">
+            <div><dt>Superficie</dt><dd>200 m²</dd></div>
+            <div><dt>Contado</dt><dd>Hasta $142,000</dd></div>
+            <div><dt>Apartado</dt><dd>$500</dd></div>
+            <div><dt>Enganche</dt><dd>Desde $8,000</dd></div>
+          </dl>
+          <ul class="project-details">
+            <li>Acceso por avenida Fuentes Mares y carretera Delicias.</li>
+            <li>Esquinas con $20,000.</li>
+            <li>Escrituración por medio de prescripción adquisitiva.</li>
+            <li>Plan a 24 meses: total $168,400, mensualidad directa $6,663.33.</li>
+            <li>Plan a 60 meses: total $208,000, mensualidad directa $3,333.63.</li>
+          </ul>
+        </div>
+      </a>
+
+      <a class="project-card" href="WhatsApp%20Image%202026-08-27%20at%203.01.31%20PM%20(5).jpeg" target="_blank" rel="noopener" aria-label="Abrir folleto de Rincones del Sacramento">
+        <img src="WhatsApp%20Image%202026-08-27%20at%203.01.31%20PM%20(5).jpeg" alt="Folleto de Rincones del Sacramento" loading="lazy">
+        <div class="project-info">
+          <p class="project-zone">Carretera Juárez km 23</p>
+          <h3>Rincones del Sacramento</h3>
+          <p>A la altura de la calle Venceremos, con terrenos 100% escriturables y posesión inmediata.</p>
+          <dl class="project-facts">
+            <div><dt>Superficie</dt><dd>200 m²</dd></div>
+            <div><dt>Contado</dt><dd>$94,000</dd></div>
+            <div><dt>Apartado</dt><dd>$1,000</dd></div>
+            <div><dt>Enganche</dt><dd>$7,000</dd></div>
+          </dl>
+          <ul class="project-details">
+            <li>Valor m² de contado: $470/m².</li>
+            <li>Valor m² financiado: $714/m².</li>
+            <li>Mensualidad desde $1,718.</li>
+            <li>Terrenos 100% escriturables.</li>
+            <li>Ideal para invertir, construir tu casa o asegurar tu patrimonio.</li>
+          </ul>
+        </div>
+      </a>
+
+      <a class="project-card" href="WhatsApp%20Image%202026-08-27%20at%203.01.31%20PM%20(6).jpeg" target="_blank" rel="noopener" aria-label="Abrir folleto de Valle Norte de Sacramento">
+        <img src="WhatsApp%20Image%202026-08-27%20at%203.01.31%20PM%20(6).jpeg" alt="Folleto de Valle Norte de Sacramento" loading="lazy">
+        <div class="project-info">
+          <p class="project-zone">Al norte de Sacramento</p>
+          <h3>Valle Norte de Sacramento</h3>
+          <p>A solo 8 minutos de Ribera de Sacramento, con calles trazadas y entrega inmediata.</p>
+          <dl class="project-facts">
+            <div><dt>Superficie</dt><dd>200 m²</dd></div>
+            <div><dt>Contado</dt><dd>$98,000</dd></div>
+            <div><dt>Crédito</dt><dd>$130,000</dd></div>
+            <div><dt>Enganche</dt><dd>$6,000</dd></div>
+          </dl>
+          <ul class="project-details">
+            <li>A crédito a 36 meses.</li>
+            <li>Plan 1 con anualidad: mensualidad $2,500 y 3 pagos anuales de $11,334.</li>
+            <li>Plan 2 sin anualidad: mensualidad $3,445.</li>
+            <li>Certeza jurídica a través de carta de posesión.</li>
+            <li>Terrenos rústicos, sin servicios.</li>
+          </ul>
+        </div>
+      </a>
+
+      <a class="project-card" href="WhatsApp%20Image%202026-08-27%20at%203.01.31%20PM%20(7).jpeg" target="_blank" rel="noopener" aria-label="Abrir folleto de Cumbres del Eden">
+        <img src="WhatsApp%20Image%202026-08-27%20at%203.01.31%20PM%20(7).jpeg" alt="Folleto de Cumbres del Eden" loading="lazy">
+        <div class="project-info">
+          <p class="project-zone">Cerca de la Presa Chihuahua</p>
+          <h3>Cumbres del Eden</h3>
+          <p>Terrenos con acceso por carretera a Cuauhtémoc, posesión inmediata y construcción libre.</p>
+          <dl class="project-facts">
+            <div><dt>Superficie</dt><dd>250 m²</dd></div>
+            <div><dt>Contado</dt><dd>$150,000</dd></div>
+            <div><dt>Enganche</dt><dd>$12,000</dd></div>
+            <div><dt>Plazos</dt><dd>12 a 60 meses</dd></div>
+          </dl>
+          <ul class="project-details">
+            <li>Será promovido como zona de descanso para casa habitación o para granjas.</li>
+            <li>Contrato de compra-venta, escriturable por prescripción adquisitiva.</li>
+            <li>Acceso principal pavimentado y breve tramo de terracería.</li>
+            <li>Financiamiento congelado máximo a 60 meses.</li>
+            <li>Servicios disponibles en la zona.</li>
+            <li>Los costos ya incluyen todos los servicios mencionados.</li>
+          </ul>
+        </div>
+      </a>
+
+      <a class="project-card" href="WhatsApp%20Image%202026-08-27%20at%203.01.31%20PM%20(8).jpeg" target="_blank" rel="noopener" aria-label="Abrir folleto de Fraccionamiento La Española">
+        <img src="WhatsApp%20Image%202026-08-27%20at%203.01.31%20PM%20(8).jpeg" alt="Folleto de Fraccionamiento La Española" loading="lazy">
+        <div class="project-info">
+          <p class="project-zone">Santa Isabel</p>
+          <h3>Fraccionamiento La Española</h3>
+          <p>Proyecto prácticamente urbanizado, con agua y luz a pie de lote, áreas verdes comunes y caballerizas.</p>
+          <dl class="project-facts">
+            <div><dt>Superficie</dt><dd>Desde 1,000 m²</dd></div>
+            <div><dt>Contado</dt><dd>$500/m²</dd></div>
+            <div><dt>Enganche</dt><dd>20%</dd></div>
+            <div><dt>Plan</dt><dd>1 a 3 años</dd></div>
+          </dl>
+          <ul class="project-details">
+            <li>Cuenta con escritura.</li>
+            <li>1 año: $550 por m².</li>
+            <li>2 años: $600 por m².</li>
+            <li>3 años: $650 por m².</li>
+            <li>Amenidades: áreas verdes comunes, parque con juegos para niños y servicio de caballerizas.</li>
+          </ul>
+        </div>
+      </a>
+
+      <a class="project-card" href="WhatsApp%20Image%202026-08-27%20at%203.01.32%20PM.jpeg" target="_blank" rel="noopener" aria-label="Abrir folleto de Mirador Las Varas">
+        <img src="WhatsApp%20Image%202026-08-27%20at%203.01.32%20PM.jpeg" alt="Folleto de Mirador Las Varas" loading="lazy">
+        <div class="project-info">
+          <p class="project-zone">Carretera Chihuahua-Parral km 17</p>
+          <h3>Mirador Las Varas</h3>
+          <p>Terrenos de 500 m² con caseta de acceso, lago artificial, agua y luz a pie de lote.</p>
+          <dl class="project-facts">
+            <div><dt>Superficie</dt><dd>500 m²</dd></div>
+            <div><dt>Contado</dt><dd>$225,000</dd></div>
+            <div><dt>Financiado</dt><dd>$235,000</dd></div>
+            <div><dt>Apartado</dt><dd>$500</dd></div>
+          </dl>
+          <ul class="project-details">
+            <li>Adquiérelo desde $3,666 mensuales.</li>
+            <li>Enganche de $15,000 al firmar contrato.</li>
+            <li>Posesión inmediata y escriturables 100%.</li>
+            <li>Ideal para invertir, construir tu casa o asegurar tu patrimonio.</li>
+            <li>Caseta de acceso, lago artificial, agua a pie de lote y luz a pie de lote.</li>
+          </ul>
+        </div>
+      </a>
+
+      <a class="project-card" href="WhatsApp%20Image%202026-08-27%20at%203.01.32%20PM%20(1).jpeg" target="_blank" rel="noopener" aria-label="Abrir folleto de Pradera Punto Norte">
+        <img src="WhatsApp%20Image%202026-08-27%20at%203.01.32%20PM%20(1).jpeg" alt="Folleto de Pradera Punto Norte" loading="lazy">
+        <div class="project-info">
+          <p class="project-zone">Zona norte de Chihuahua</p>
+          <h3>Pradera Punto Norte</h3>
+          <p>A minutos de Los Nogales y Sacramento, con agua por acarreo, luz presente en la zona y entrega inmediata.</p>
+          <dl class="project-facts">
+            <div><dt>Superficie</dt><dd>200 m²</dd></div>
+            <div><dt>Contado</dt><dd>$160,000</dd></div>
+            <div><dt>Financiado</dt><dd>$199,000</dd></div>
+            <div><dt>Enganche</dt><dd>$6,500</dd></div>
+          </dl>
+          <ul class="project-details">
+            <li>Ubicación estratégica a minutos de Los Nogales y Sacramento.</li>
+            <li>Zona con crecimiento real y alta plusvalía.</li>
+            <li>Terrenos habitacionales de 200 m².</li>
+            <li>60 meses desde $3,208 mensual.</li>
+            <li>70 meses desde $2,750 mensual.</li>
+            <li>Prescripción adquisitiva.</li>
+          </ul>
+        </div>
+      </a>
     </div>
   </div>
 </section>
@@ -1230,7 +1619,7 @@ footer { background: var(--black); padding: 68px 5% 36px; border-top: 1px solid 
 
     </div>
     <div style="text-align:center;margin-top:52px;" class="reveal">
-      <a href="https://www.facebook.com/share/1EY6xToPox/" target="_blank" rel="noopener" class="btn-ghost-dark">Hablar con un asesor en Facebook →</a>
+      <a href="https://wa.me/526145497808" target="_blank" rel="noopener" class="btn-ghost-dark">Hablar con un asesor por WhatsApp →</a>
     </div>
   </div>
 </section>
@@ -1241,13 +1630,13 @@ footer { background: var(--black); padding: 68px 5% 36px; border-top: 1px solid 
     <div class="section-header">
       <p class="section-tag reveal">Da el siguiente paso</p>
       <h2 class="section-title reveal d1" id="contact-title" style="color:var(--white);">Conversemos sobre<br>tu próxima <em>inversión</em></h2>
-      <p class="section-lead reveal d2" style="color:var(--text-muted);">Prepara tu consulta y continúa la conversación directamente en la página de Facebook de SAVET.</p>
+      <p class="section-lead reveal d2" style="color:var(--text-muted);">Prepara tu consulta y continúa la conversación directamente por WhatsApp con SAVET.</p>
     </div>
     <div class="contact-grid">
       <div class="contact-left reveal">
         <p class="section-tag no-lines">Solicitud de información</p>
         <h3 class="contact-title">Tu próximo terreno<br>puede <em>comenzar aquí</em></h3>
-        <p class="contact-sub">Déjanos tus preferencias. Al enviar, copiaremos tu consulta y abriremos Facebook para que puedas pegarla en el chat.</p>
+        <p class="contact-sub">Déjanos tus preferencias. Al enviar, abriremos WhatsApp con tu consulta preparada.</p>
         <form id="booking-form" novalidate>
           <div class="form-row">
             <div class="form-group">
@@ -1274,12 +1663,19 @@ footer { background: var(--black); padding: 68px 5% 36px; border-top: 1px solid 
               <label for="habitacion">Proyecto de interés</label>
               <select id="habitacion" name="habitacion">
                 <option value="">Seleccionar...</option>
-                <option value="Granjas Lomas de Sacramento">Granjas Lomas de Sacramento</option>
-                <option value="Campestre Lomas de Sacramento">Campestre Lomas de Sacramento</option>
-                <option value="El Papalote">El Papalote</option>
-                <option value="Rincones de Sacramento">Rincones de Sacramento</option>
-                <option value="Calera">Calera</option>
-                <option value="Paraíso Combate">Paraíso Combate</option>
+                <option value="Flor del Desierto">Flor del Desierto</option>
+                <option value="Rancho La Haciendita">Rancho La Haciendita</option>
+                <option value="Campos del Sol">Campos del Sol</option>
+                <option value="Vistas del Horizonte">Vistas del Horizonte</option>
+                <option value="Valle del Bisonte">Valle del Bisonte</option>
+                <option value="La Calera">La Calera</option>
+                <option value="Prado de Luna">Prado de Luna</option>
+                <option value="Rincones del Sacramento">Rincones del Sacramento</option>
+                <option value="Valle Norte de Sacramento">Valle Norte de Sacramento</option>
+                <option value="Cumbres del Eden">Cumbres del Eden</option>
+                <option value="Fraccionamiento La Española">Fraccionamiento La Española</option>
+                <option value="Mirador Las Varas">Mirador Las Varas</option>
+                <option value="Pradera Punto Norte">Pradera Punto Norte</option>
                 <option value="Quiero comparar opciones">Quiero comparar opciones</option>
               </select>
             </div>
@@ -1297,25 +1693,25 @@ footer { background: var(--black); padding: 68px 5% 36px; border-top: 1px solid 
             <label for="mensaje">¿Qué te gustaría saber?</label>
             <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos tu presupuesto, plazo ideal o cualquier duda sobre el proyecto..."></textarea>
           </div>
-          <button type="submit" class="form-submit">Copiar consulta y abrir Facebook →</button>
+          <button type="submit" class="form-submit">Enviar consulta por WhatsApp →</button>
         </form>
       </div>
       <div class="contact-right reveal d1">
         <p class="section-tag no-lines">Contacto directo</p>
         <h3 class="contact-title">Información para<br><em>decidir mejor</em></h3>
         <div class="channels">
-          <a href="https://www.facebook.com/share/1EY6xToPox/" target="_blank" rel="noopener" class="channel" aria-label="Visitar Facebook de SAVET">
+          <a href="https://wa.me/526145497808" target="_blank" rel="noopener" class="channel" aria-label="Contactar a SAVET por WhatsApp">
             <div class="ch-icon">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
             </div>
-            <div class="ch-info"><strong>Facebook SAVET</strong><span>Escríbenos por nuestro canal oficial</span></div>
+            <div class="ch-info"><strong>WhatsApp SAVET</strong><span>614 549 7808</span></div>
             <svg class="ch-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="9 18 15 12 9 6"/></svg>
           </a>
           <a href="#gallery" class="channel" aria-label="Ver portafolio de terrenos">
             <div class="ch-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.86 9.8 19.79 19.79 0 01.79 1.1 2 2 0 012.77 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.77a16 16 0 006.29 6.29l1.13-1.13a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
             </div>
-            <div class="ch-info"><strong>Portafolio disponible</strong><span>Compara las fichas de los 6 proyectos</span></div>
+            <div class="ch-info"><strong>Portafolio disponible</strong><span>Compara las fichas de los 13 proyectos</span></div>
             <svg class="ch-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="9 18 15 12 9 6"/></svg>
           </a>
           <a href="#booking-form" class="channel" aria-label="Preparar solicitud de visita">
@@ -1362,14 +1758,16 @@ footer { background: var(--black); padding: 68px 5% 36px; border-top: 1px solid 
     <div class="footer-col">
       <h4>Proyectos</h4>
       <ul>
-        <li><a href="#gallery">Lomas de Sacramento</a></li>
-        <li><a href="#gallery">El Papalote</a></li>
-        <li><a href="#gallery">Paraíso Combate</a></li>
+        <li><a href="#gallery">Flor del Desierto</a></li>
+        <li><a href="#gallery">Rancho La Haciendita</a></li>
+        <li><a href="#gallery">Mirador Las Varas</a></li>
+        <li><a href="#gallery">Pradera Punto Norte</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Contacto</h4>
       <ul>
+        <li><a href="https://wa.me/526145497808" target="_blank" rel="noopener">WhatsApp: 614 549 7808</a></li>
         <li><a href="https://www.facebook.com/share/1EY6xToPox/" target="_blank" rel="noopener">Facebook SAVET</a></li>
         <li><a href="#contact">Solicitar información</a></li>
         <li><a href="#testimonios">Guía para elegir</a></li>
@@ -1385,9 +1783,9 @@ footer { background: var(--black); padding: 68px 5% 36px; border-top: 1px solid 
   </div>
 </footer>
 
-<!-- ============ FACEBOOK FLOAT ============ -->
-<a href="https://www.facebook.com/share/1EY6xToPox/"
-   id="wa-float" target="_blank" rel="noopener" aria-label="Contactar a SAVET por Facebook">
+<!-- ============ WHATSAPP FLOAT ============ -->
+<a href="https://wa.me/526145497808"
+   id="wa-float" target="_blank" rel="noopener" aria-label="Contactar a SAVET por WhatsApp al 614 549 7808">
   <div class="wa-ring-2" aria-hidden="true"></div>
   <div class="wa-ring"   aria-hidden="true"></div>
   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
@@ -1572,7 +1970,7 @@ footer { background: var(--black); padding: 68px 5% 36px; border-top: 1px solid 
   }, { threshold: 0.09, rootMargin: '0px 0px -32px 0px' });
   revealEls.forEach(function (el) { revealIO.observe(el); });
 
-  /* ---- FORMULARIO DE INTERÉS → FACEBOOK ---- */
+  /* ---- FORMULARIO DE INTERÉS → WHATSAPP ---- */
   var form = document.getElementById('booking-form');
   if (form) {
     form.addEventListener('submit', function (e) {
@@ -1591,7 +1989,7 @@ footer { background: var(--black); padding: 68px 5% 36px; border-top: 1px solid 
       }
 
       var msg = [
-        'SAVET — Solicitud de información',
+        'SAVET - Solicitud de información',
         '',
         'Nombre: ' + n,
         'Teléfono: ' + t,
@@ -1604,31 +2002,11 @@ footer { background: var(--black); padding: 68px 5% 36px; border-top: 1px solid 
         'Me gustaría recibir información y conocer la disponibilidad vigente.'
       ].filter(Boolean).join('\n');
 
-      function openFacebook() {
-        window.open('https://www.facebook.com/share/1EY6xToPox/', '_blank', 'noopener');
+      function openWhatsApp() {
+        window.open('https://wa.me/526145497808?text=' + encodeURIComponent(msg), '_blank', 'noopener');
       }
 
-      if (navigator.clipboard && window.isSecureContext) {
-        var copyTask = navigator.clipboard.writeText(msg);
-        openFacebook();
-        copyTask.then(function () {
-          alert('Tu consulta quedó copiada. Pégala en el chat de Facebook para enviarla a SAVET.');
-        }).catch(function () {
-          alert('Facebook se abrió en otra pestaña. Copia manualmente los datos del formulario si el navegador no permitió copiarlos.');
-        });
-      } else {
-        var helper = document.createElement('textarea');
-        helper.value = msg;
-        helper.setAttribute('readonly', '');
-        helper.style.position = 'fixed';
-        helper.style.opacity = '0';
-        document.body.appendChild(helper);
-        helper.select();
-        document.execCommand('copy');
-        document.body.removeChild(helper);
-        alert('Tu consulta quedó copiada. Pégala en el chat de Facebook para enviarla a SAVET.');
-        openFacebook();
-      }
+      openWhatsApp();
     });
 
     /* Date min values */
